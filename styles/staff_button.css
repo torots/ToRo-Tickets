@@ -1,0 +1,46 @@
+.button {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5px;
+        text-shadow: black 1px 1px 1px;
+        background-color: #06C;
+        color: white;
+        border: 1px solid #666;
+        font-weight: bold;
+        cursor: pointer;
+        -moz-border-radius: 0.4em;
+    -khtml-border-radius: 0.4em;
+    -webkit-border-radius: ;
+}
+
+input[type=text] {
+    padding-left: .5em;
+    padding-right: .5em;
+    border: 1px solid #191919;
+    background: #FAFAFA;
+    font: bold 0.95em arial, sans-serif;
+    -moz-border-radius: 0.4em;
+    -khtml-border-radius: 0.4em;
+    -webkit-border-radius: ;
+}
+
+input[type=password] {
+    padding-left: .5em;
+    padding-right: .5em;
+    border: 1px solid #191919;
+    background: #FAFAFA;
+    font: bold 0.95em arial, sans-serif;
+    -moz-border-radius: 0.4em;
+    -khtml-border-radius: 0.4em;
+    -webkit-border-radius: ;
+}
+
+select {
+    padding: 0.15em;
+    border: 1px solid #191919;
+    background: #FAFAFA;
+    font: bold 0.95em arial, sans-serif;
+    -moz-border-radius: 0.4em;
+    -khtml-border-radius: 0.4em;
+    -webkit-border-radius: ;
+}
+

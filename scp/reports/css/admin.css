@@ -1,0 +1,568 @@
+/* body and default links */
+
+body,html {
+    font-family: "Trebuchet MS", Verdana, Sans-serif;
+    color:#000;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+
+a, a:link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    /* border-bottom: dotted 1px #666 */
+    }
+
+a:visited {
+    color: #333;
+    /* border-bottom: dotted 1px #666 */
+    }
+
+a:hover {
+    color: #333;
+    /* border-bottom: solid 1px #333 */
+    }
+
+h1,h2,h3,h4{
+    margin-bottom:0px;
+    padding:0px;
+    color:#333;
+}
+td.line {
+    background-color:#333;
+    height:1px;
+    width:1px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* head */
+#head{
+    position:absolute;
+    top:0px;
+    left:85px;
+    margin:0px;
+    width:100%;
+}
+#head_image {
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding: 15px 10px 0px 10px;
+    margin: 0px;
+    /*height:80px;*/
+    
+}
+/* header */
+#header {
+    position:absolute;
+    color: #fff; 
+    padding: 10px 50px 10px 5px;
+    margin: 0px 0px;
+    left: 0px;
+    top:0px;
+    vertical-align:top;
+}
+#username {
+    position:absolute;
+    color:white;
+    top:30px;
+    right:10px;
+    font-size:smaller;
+}
+#topsearch {
+    position:absolute;
+    background-color:inherit;
+    margin-top:0px;
+    margin-right:0px;
+    color:#ccc;
+    top:10px;
+    right:50px;
+    font-size:smaller;
+}
+#topsearch form{
+    font-size:9px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+#topsearch .form{
+    font-size:9px;
+}
+#topsearch  input[type="submit"]{
+    border:1px outset #336;
+    background-color:#ccc;
+}
+#topsearch  input:hover[type="submit"]{
+    border:1px inset #336;
+    background-color:#f5f5f5;
+}
+
+#topsearch  input[type="text"]{
+    border:1px inset #333;
+    background-color:#ccc;
+}
+#topsearch  input:hover[type="text"]{
+    border:1px inset #333;
+    background-color:#f5f5f5;
+}
+
+/* top menu */
+#navigation {
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    color: white; 
+    padding: 10px;
+    z-index: 3;
+    overflow:visible;
+    font-size:smaller;
+}
+
+#navigation a {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#bbb;
+    border: 1px solid black;
+    color: #000;
+}
+
+#navigation a:hover {
+    background-color:#f5f5f5;
+    color:#333
+}
+
+/* top menu */
+#intnavigation {
+    position:relative;
+    top: 10px;
+    left: 19px;
+    color: white; 
+    padding: 10px;
+    z-index: 3;
+    overflow:visible;
+    font-size:smaller;
+}
+
+#intnavigation a {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#bbb;
+    border: 1px solid black;
+    color: #000;
+}
+
+#intnavigation a:hover {
+    background-color:#f5f5f5;
+    color:#333
+}
+
+/* clientsearch */
+#clientsearch {
+    position: relative;
+    border: 1px solid #1A3955;
+    width: 580px;
+    }
+		
+#clientsearch_title {
+    background-color:#1A3955;
+    border: 1px solid #1A3955;
+    position:relative;
+    color: #FFFFFF;
+}    
+
+#clientsearc_body {
+    position:relative;
+    padding-top:20px;
+    text-align:center;
+    /* padding-left:10px;  */
+    /* padding right:10px; */
+    left:1px;
+    right:1px;
+}
+
+/* sidebar */
+#sidebar {
+    border: 1px solid #1A3955;
+    position:absolute;
+    top:200px;
+    left:5px;
+    width:160px;
+}
+
+#sidetitle {
+    background-color:#1A3955;
+    border: 1px solid #1A3955;
+    position:relative;
+    width:158px;
+    text-align:center;
+}
+
+#sidetitle p {
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+#sidemenu {
+    position:relative;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    /* padding-left:10px;  */
+    /* padding right:10px; */
+    left:1px;
+    right:1px;
+    width:156px;
+}
+
+#sidemenu a:hover {
+    background-color:#ddd;
+    color:#333
+}
+
+/* main */
+#main {
+    position:absolute;
+    top:185px;
+    padding-left:10px;
+    padding-right:10px;
+    right:0px;
+    left:168px;
+}
+/* Table of Contents */
+#main #toc {
+    width:400px;
+    border: 1px solid black;
+    padding:4px;
+    background-color:#ccc;
+    font-size:smaller;
+}
+
+#main #toc .title{
+    font-size:large;
+    font-weight:bold;
+    color:#333;
+    margin:0px;
+    padding:  0px;
+}
+
+#main #toc hr{
+    width:50%;
+    color:#333;
+    height:1px;
+}
+
+#main #toc a{    
+    border:none;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+}
+
+#main #toc a:hover {
+    background-color:#f5f5f5;
+    color:#333;
+}
+/* Table of Contents */
+#main #dtoc {
+    width:200px;
+    border: 1px solid black;
+    padding:4px;
+    background-color:#ccc;
+    font-size:smaller;
+}
+
+#main #dtoc .title{
+    font-size:large;
+    font-weight:bold;
+    color:#333;
+    margin:0px;
+    padding:  0px;
+}
+
+#main #dtoc .toctext{
+    font-weight:bold;
+}
+#main #dtoc hr{
+    width:50%;
+    color:#333;
+    height:1px;
+}
+
+#main #dtoc a{
+    border:none;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+}
+
+#main #dtoc a:hover {
+    background-color:#f5f5f5;
+    color:#333;
+}
+#main #dtoc #uplinks{
+    font-size:small;
+    display:inline;
+}
+#main #dtoc #uplinks a{
+    display:inline;
+    color:#333;
+}
+
+
+/* Main Content Pane */
+#main #content {
+    top: 0px; 
+    right: 0px; 
+    position:relative; 
+    background-color:#ddd;
+    border: 1px solid black; 
+    padding: 5px; 
+    margin:0px 0px 10px 0px;
+    height:auto !important;
+    min-height:350px; 
+    z-index: 1; 
+    overflow:visible;
+    width:80%;
+}
+#main #content input[type="submit"]{
+    border:1px outset #333;
+    background-color:inherit;
+}
+#main #content  input[type="submit"]:hover {
+    background-color:#f5f5f5;
+    cursor: pointer;
+}
+
+#main #content table.data{
+    border:1px solid #333;
+    min-width:50%;
+}
+#main #content .rowheader{
+    background-color:#333;
+    color:white;
+}
+
+#main #content .rowcolor1{
+    background-color:#eee;
+}
+
+#main #content .rowcolor2{
+    background-color:#ccc;
+}
+
+#main #content .deletedcolor1{
+    background-color:#fee;
+}
+
+#main #content .deletedcolor2{
+    background-color:#fcc;
+}
+
+#main #content .rowtext{
+    background-color:inherit;
+    border-style:solid;
+    border-width:1px;
+    border-color:#333;
+}
+
+#main #content input.rowtext{
+    padding: 1px 5px;
+}
+
+#main #content img.logoimage{
+    max-width:200px;
+}
+#main #content .error{
+    color:red;
+}
+#main #content .edittext{
+    border-style:inset;
+    border-width:1px;
+    background-color:#ccc;
+    border-color:#333;
+    
+}
+#main #content .editselect {
+    background-color:#ccc;
+}
+#main #content textarea.edittext{
+    padding:5px;
+}
+#main #content input.edittext{
+    padding:1px 5px;
+}
+
+#main #content a.control {
+    font-size:smaller;
+    border: 1px outset black;
+    padding: 0px 10px;
+    margin: 1px;
+}
+
+#main #content a:hover.control {
+    background-color:#f5f5f5;
+}
+
+#main #content li{
+    margin-left:15px;
+}
+
+/* subsection menu */
+
+#main #submenu {
+    width:175px;
+    border: 1px solid black;
+    padding:4px;
+    background-color:#ccc;
+    font-size:smaller;
+}
+
+#main #submenu h3 {
+    color:#333;
+    margin:0px;
+    font-size: medium;
+    margin-left:5px;
+}
+
+#main #submenu a {
+    border:none;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    display:block;
+}
+#main #submenu a.control{
+    margin-top:10px;
+    border: 1px solid black;
+}
+#main #submenu a:hover {
+    background-color:#f5f5f5;
+    color:#333;
+}
+
+#main #submenu h3 a{
+    color:#333;
+    padding:0px;
+    font-size: medium;
+}
+    
+
+/* control pane */
+#main #controls{
+    font-size:smaller;
+    position:relative; 
+    top:0px;
+    left:0px;
+    z-index:3;
+    padding:5px;
+    margin:0px 13px;
+    display:inline
+    
+}
+
+#main #controls a {
+    border: 1px solid black;
+    padding: 0px 10px;
+    margin: 0px;
+    background-color:#ddd;
+}
+
+#main #controls a:hover {
+    background-color:#f5f5f5;
+}
+
+#main #info{
+clear:both;
+font-size:smaller;
+    top:0px;
+    z-index:3;
+    width:500px;
+    border: 1px solid black;
+    background-color:#ddd;
+    padding:5px;
+    margin:10px;
+
+}
+
+#main #info a {
+    border: 1px outset black;
+    padding: 0px 10px;
+    margin: 1px;
+}
+
+#main #info a:hover {
+    background-color:#f5f5f5;
+}
+
+/* HUD - Heads up Display */
+#hud {
+    position: absolute;
+    top:600px;
+    left: 5px;
+    padding: 5px;
+
+}
+
+
+#left {
+    position: absolute;
+    margin-left: 0em;
+    background-color:#ddd;
+    width:300px;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+#middle {
+    position: absolute;
+    margin-left: 20em; */
+    background-color:#ddd;
+    width:300px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#right {
+    position: absolute;
+    margin-left: 40em;
+    background-color:#ddd;
+    width:300px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* footer */
+#footer {
+    position: absolute;
+    top: 755px; 
+    left: 360px;
+    text-align: center; 
+    font-size: small;
+}
+
+div#EmpForm
+{
+  margin: 0px 20px 0px 20px;
+  display: none;
+}
+
+div#OthForm
+{
+  margin: 0px 20px 0px 20px;
+  display: none;
+}
+
+div#DatForm
+{
+  margin: 0px 20px 0px 20px;
+  display: none;
+}
+

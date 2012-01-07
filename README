@@ -1,0 +1,13 @@
+Welcome to the toro Ticketing System 
+toroTS is a branch of OsTicket Reloaded / OsTicket.  It builds on top of the OST-R 1.6ST release which supports several localizations or languages. 
+
+Developers, who would like to contribute to make this osTicket fork successful are more than welcome to join toroTS. 
+
+Translators who would like to contribute a new language feel free to download the base translate.php (english) and adjust it. New files can be added using Git or can be sent to the email address mentionted below.
+
+Some additional features that we have added:
+ * control of columns, displays and weights.
+ * easier theme/layout control (its not fully themable but we hope to get it there)
+ * ticket age column
+ * css mouseover tooltips
+ * LDAP Authentication 
