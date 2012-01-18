@@ -78,7 +78,7 @@ $info=($_POST && $errors)?Format::input($_POST):array(); //on error...use the po
     <tr>
         <td align="left" valign="top"><b><?php print translate('LABEL_ISSUE_SUMMARY')?>:</b></td>
         <td>
-            <i><?php print translate('TEXT_Visible to client')?></i><font class="error"><b>*&nbsp;<?=$errors['issue']?></b></font><br/>
+            <i><?php print translate('TEXT_VISIBLE_TO_CLIENT')?></i><font class="error"><b>*&nbsp;<?=$errors['issue']?></b></font><br/>
             <?
             $sql='SELECT premade_id,title FROM '.KB_PREMADE_TABLE.' WHERE isenabled=1';
             $canned=db_query($sql);
