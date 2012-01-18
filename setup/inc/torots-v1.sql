@@ -93,6 +93,7 @@ CREATE TABLE `%TABLE_PREFIX%config` (
   `ticket_alert_admin` tinyint(1) unsigned NOT NULL DEFAULT '1',
   `ticket_alert_dept_manager` tinyint(1) unsigned NOT NULL DEFAULT '1',
   `ticket_alert_dept_members` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `pending_ticket_autoclose` SMALLINT UNSIGNED NOT NULL DEFAULT '48',
   `message_alert_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `message_alert_laststaff` tinyint(1) unsigned NOT NULL DEFAULT '1',
   `message_alert_assigned` tinyint(1) unsigned NOT NULL DEFAULT '1',
