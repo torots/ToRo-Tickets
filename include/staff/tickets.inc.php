@@ -429,7 +429,7 @@ $basic_display=!isset($_REQUEST['advance_search'])?true:false;
 	    <?php   // Tooltips!
 
 	    $sql = "SELECT tool_tips FROM ".CONFIG_TABLE;
-	    $result = mysql_query($sql);
+	    $result = mysql_query($sql)or die(mysql_error());
 	    $tooltip_check = mysql_result($result,0);
 
 	    // Check to see if tooltips are turned on.
@@ -468,24 +468,28 @@ $basic_display=!isset($_REQUEST['advance_search'])?true:false;
 	    // print $lastComm;
 
 	    $CommResult=mysql_query($lastComm) or die(mysql_error());
+   
 	    while($tip = mysql_fetch_array($CommResult)){
 
 	    if($tip['message']==''){ $tooltip=$tip['response']; }else{ $tooltip=$tip['message']; }
 	    if($tip['response']==''){ $tooltip=$tip['message']; }else{ $tooltip=$tip['response']; }
+	   
+        $tooltip = implode(' ', array_slice(explode(' ', $tooltip), 0, 50));
+        if(trim($tooltip)==''){ $tooltip = "No response or messages yet"; }
+ 
+   
+		}// End comm while loop
 	    
-	    
-
 	    // Table Data is stored in _columns, print off the active data cells here and order by their weight.
 
                 $tdList = "SELECT td_code FROM ".COLUMNS_TABLE." WHERE active=1 ORDER BY weight";
-		//print $tdList;
+		        // print $tdList;
                 $result = mysql_query($tdList)or die(mysql_error());
 
                 while($td = mysql_fetch_array($result)){
                 eval('?>' . $td['td_code'] . '<?php ');
                 }
 
-		}// End comm while loop
             ?>
 	    
             </tr>
