@@ -12,7 +12,7 @@
     See LICENSE.TXT for details.
 
     vim: expandtab sw=4 ts=4 sts=4:
-    $Id: index.php,v 1.1 2011/10/25 17:01:42 root Exp $
+    $Id: index.php,v 1.1 2012/01/19 16:09:09 root Exp $
 **********************************************************************/
 require('client.inc.php');
 //We are only showing landing page to users who are not logged in.
@@ -25,8 +25,8 @@ if($thisclient && is_object($thisclient) && $thisclient->isValid()) {
 require(CLIENTINC_DIR.'header.inc.php');
 ?>
 <div id="index">
-<h1 dir="<?php echo $trl->dir() ?>"><?= translate('TEXT_WELCOME_TITLE'); ?></h1>
-<p class="big" dir="<?php echo $trl->dir() ?>"><?= translate('TEXT_WELCOME_MSG'); ?></p>
+<h1><?= translate('TEXT_WELCOME_TITLE'); ?></h1>
+<p class="big"> <?= translate('TEXT_WELCOME_MSG'); ?></p>
  <?php
   $query = "SELECT client_motd,client_motd_lastupdated FROM ".CONFIG_TABLE.";";
   $result = mysql_query($query) or die( "Error: Query Failed");
@@ -43,8 +43,8 @@ require(CLIENTINC_DIR.'header.inc.php');
 <br />
 <div class="lcol">
   <img src="./images/new_ticket_icon.jpg" width="48" height="48" align="left" style="padding-bottom:150px;">
-  <h3 dir="<?php echo $trl->dir() ?>"><?= translate('TITLE_BOX_NEW_TICKET'); ?></h3>
-  <p  dir="<?php echo $trl->dir() ?>"><?= translate('TEXT_BOX_NEW_TICKET'); ?></p>
+  <h3><?= translate('TITLE_BOX_NEW_TICKET'); ?></h3>
+  <p><?= translate('TEXT_BOX_NEW_TICKET'); ?></p>
   <form method="link" action="open.php">
   <br /><br />
   <input type="submit" class="button" value="<?= translate('LABEL_OPEN_NEW_TICKET') ?>">
